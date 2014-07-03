@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<!--Center Container-->
+	<div id="center">
+
+		<!--Header-->
+		<div id="header">
+			<h1>Adina's Shopping List</h1>
+		</div>
+
+		<!--Form-->
+		<form id="input" action="/Info" method="moreInfo" class="form-info">
+		    <div id="searchContainer">
+		        <input type="text" name="name" id="itemName" value="Enter List Item Here">
+			    <input class="btn" type="button" name="add" value="add">
+		    </div>
+		</form>
+		<!--List-->
+		<ul id="resultList"></ul>
+
+	</div>
+</body>
+</html>
