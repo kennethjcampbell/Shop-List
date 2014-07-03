@@ -1,17 +1,16 @@
 $(document).ready(function() {
 
     $("#itemName").click(function() {	
-		$('#itemName').val("");
+		  $('#itemName').val("");
     });
 
     $('#searchContainer').on('click','input[name="add"]', function() {
       addItem();
     });
 
-    $('#searchContainer').on('keydown','input[name="add"]', function(event) {
+    $('#searchContainer').on('keydown','#itemName', function(event) {
       if( event.which == 13) {
-       $('ul').append('<li>'+$('#itemName').val()+'<button class="delete">Delete</button><button class="complete">Complete</button></li>');
-       $('#itemName').val("");
+        addItem();
       }
     });
 
@@ -27,5 +26,7 @@ $(document).ready(function() {
         $('ul').append('<li>'+$('#itemName').val()+'<button class="delete">Delete</button><button class="complete">Complete</button></li>');
         $('#itemName').val("");
       }
+
+
 });
 
